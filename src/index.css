@@ -36,6 +36,7 @@ Variables
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-cw-purple-light: hsl(339, 66%, 62%);
+  --clr-cw-purple-dark: hsl(325, 39%, 51%);
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;

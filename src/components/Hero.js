@@ -7,10 +7,11 @@ const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
-        <h1>
-          design your <br />
-          <span>future</span>
-        </h1>
+        <div className="design">Design Your</div>
+        <div className="design-body">
+          <h1>future</h1>
+          <h1>future</h1>
+        </div>
         <p>
           We are committed to providing the most innovative and effective IT
           training available today. Our process is designed to lead each and
@@ -37,14 +38,47 @@ const Wrapper = styled.section`
     display: none;
   }
 
-  span {
+  .design {
+    font-size: 4rem;
+    color: var(--clr-cw-purple-dark);
+    font-weight: bold;
+  }
+
+  .design-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 8rem;
+      font-weight: 900;
+      background-color: var(--clr-cw-purple-dark);
+      color: #fff;
+      display: block;
+      /* padding: 0.5em; */
+      border-bottom: 6px double white;
+      border-top: 6px solid var(--clr-cw-purple-dark);
+    }
+
+    h1:nth-child(2) {
+      position: absolute;
+      background-color: #fff;
+      color: var(--clr-cw-purple-dark);
+      clip-path: inset(
+        -1% -1% 38% -1%
+      ); // Added the negative values to prevent icky "bleed" in Chrome
+    }
+  }
+
+  /* span {
     color: var(--clr-cw-purple-light);
     font-family: courier;
-    border-bottom: 4px solid var(--clr-cw-purple-light);
-    border-top: 4px solid var(--clr-cw-purple-light);
+    border-bottom: 6px double var(--clr-cw-purple-light);
+    border-top: 6px double var(--clr-cw-purple-light);
     font-size: 5rem;
     padding-top: 4rem;
-  }
+  } */
 
   p {
     line-height: 2;

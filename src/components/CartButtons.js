@@ -61,7 +61,7 @@ const Wrapper = styled.div`
     svg {
       height: 1.6rem;
       margin-left: 5px;
-      color: var(--clr-cw-purple-light);
+      color: var(--clr-cw-purple-dark);
     }
   }
   .cart-value {
@@ -90,7 +90,7 @@ const Wrapper = styled.div`
     letter-spacing: var(--spacing);
     svg {
       margin-left: 5px;
-      color: var(--clr-cw-purple-light);
+      color: var(--clr-cw-purple-dark);
     }
   }
 `;
