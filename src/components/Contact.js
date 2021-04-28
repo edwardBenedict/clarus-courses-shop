@@ -9,7 +9,9 @@ const Contact = () => {
         </h3>
         <div className="content">
           <p>
-            (EARN $200 per referral & GIVE a $200 discount!) <br />
+            <p className="top-line">
+              (EARN $200 per referral & GIVE a $200 discount!)
+            </p>
             We love it when our students and graduates become raving fans! Tell
             your friends!
           </p>
@@ -32,6 +34,10 @@ const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
     text-transform: none;
+  }
+  .top-line {
+    font-size: 1.5rem;
+    color: var(--clr-cw-purple-dark);
   }
   p {
     line-height: 2;
